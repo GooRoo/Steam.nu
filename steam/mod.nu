@@ -50,8 +50,8 @@ export def app-details [
 	--lang (-l): string@supported-languages = english  # The language of the information to retrieve
 	--filters (-f): list<string>                       # Limit fields to retrieve
 ]: [
-	int -> table
-	string -> table
+	int -> record
+	string -> record
 ] {
 	let pipe_in = $in
 
@@ -76,6 +76,7 @@ export def app-details [
 			| update audio {|row| $row.audio != null}
 		}
 		| reject --optional data
+		| get 0
 }
 
 # Get price information on one or more games
