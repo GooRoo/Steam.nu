@@ -1,0 +1,11 @@
+{
+    name: "steam"
+    nu-version: "0.108.0"
+    version: "1.0.0"
+    type: "module"
+    author: "Serhii “GooRoo” Olendarenko"
+    short-description: "Get information about games or apps from Steam"
+    url: "https://github.com/GooRoo/Steam.nu"
+    keywords: [steam api game info price]
+    license: "BSD-3-Clause"
+}
