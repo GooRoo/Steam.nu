@@ -71,7 +71,7 @@ export def app-details [
 		| update cells -c [supported_languages] {|value|
 			$value
 			| split row ", "
-			| parse -r '(?<language>[\w\s()]+)(?<audio><strong>\*</strong>)?(?:<br>.+)?'
+			| parse -r '(?<language>[-\w\s()]+)(?<audio><strong>\*</strong>)?(?:<br>.+)?'
 			| insert text true
 			| update audio {|row| $row.audio != null}
 		}

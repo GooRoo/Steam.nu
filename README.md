@@ -20,13 +20,6 @@ Get the detailed information:
 
 ```nushell
 > 'https://store.steampowered.com/app/1328670/Mass_Effect_Legendary_Edition/' | steam app-details
-╭───┬─────────┬─────────┬──────┬────────────────────────────────┬─────────────┬──────────────┬─────────┬─────────┬─────╮
-│ # │   id    │ success │ type │              name              │ steam_appid │ required_age │ is_free │ control │ ... │
-│   │         │         │      │                                │             │              │         │ ler_sup │     │
-│   │         │         │      │                                │             │              │         │ port    │     │
-├───┼─────────┼─────────┼──────┼────────────────────────────────┼─────────────┼──────────────┼─────────┼─────────┼─────┤
-│ 0 │ 1328670 │ true    │ game │ Mass Effect™ Legendary Edition │     1328670 │ 16+          │ false   │ full    │ ... │
-╰───┴─────────┴─────────┴──────┴────────────────────────────────┴─────────────┴──────────────┴─────────┴─────────┴─────╯
 ```
 
 Specify the language of the response:
